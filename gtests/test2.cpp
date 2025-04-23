@@ -2,7 +2,6 @@
 #include <cstdint>
 #include <cstring>
 
-// Function under test
 void analyze_word_lengths(const char *text, uint32_t *length_counts, size_t max_length) {
     memset(length_counts, 0, sizeof(uint32_t) * (max_length + 2));
     uint32_t currentLength = 0; // basically a counter
