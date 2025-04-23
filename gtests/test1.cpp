@@ -35,7 +35,7 @@ void generate_primes(uint32_t *buffer, size_t buffer_size, size_t n) {
         buffer[count] = 0;
     }
 }
-// -------------------------------
+// -------------- HELPERS -----------------
 
 // Helper function to compare arrays
 bool arrays_equal(const uint32_t* a, const uint32_t* b, size_t size) {
@@ -45,7 +45,7 @@ bool arrays_equal(const uint32_t* a, const uint32_t* b, size_t size) {
     return true;
 }
 
-// ----------------- Test Cases -----------------
+// ----------------- TESTS -----------------
 TEST(GeneratePrimesTest, SmallPrimesCorrectness) {
     const size_t buffer_size = 10;
     uint32_t buffer[buffer_size];
